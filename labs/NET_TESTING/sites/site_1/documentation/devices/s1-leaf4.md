@@ -199,12 +199,22 @@ daemon TerminAttr
 | Buffer | notifications |
 | Trap | debugging |
 
+| VRF | Source Interface |
+| --- | ---------------- |
+| default | Management0 |
+
+| VRF | Hosts | Ports | Protocol | SSL-profile |
+| --- | ----- | ----- | -------- | ----------- |
+| default | 10.100.100.100 | Default | UDP | - |
+
 #### Logging Servers and Features Device Configuration
 
 ```eos
 !
 logging buffered 8000 notifications
 logging trap debugging
+logging host 10.100.100.100
+logging source-interface Management0
 ```
 
 ## MLAG

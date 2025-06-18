@@ -84,12 +84,12 @@ logging:
      size: 8000
      level: notifications
    trap: debugging
-#   vrfs:
-#     - name: "default"
-#       source_interface: "Management0"
-#       hosts:
-#         - name: 10.100.100.100
-#           protocol: udp
+   vrfs:
+     - name: "default"
+       source_interface: "Management0"
+       hosts:
+         - name: 10.100.100.100
+           protocol: udp
 
 # # L3 Edge port definitions. This can be any port in the entire Fabric, where IP interfaces are defined.
 l3_edge:
