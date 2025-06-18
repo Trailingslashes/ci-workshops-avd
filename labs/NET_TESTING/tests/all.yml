@@ -16,3 +16,9 @@ anta.tests.software:
         - v1.32.0
         - v1.35.0
 
+anta.tests.routing:
+  # multi-agent required for BGP - VXLAN
+  generic:
+    - VerifyRoutingProtocolModel:
+        model: multi-agent
+
