@@ -79,11 +79,11 @@ bgp_peer_groups:
     password: 4b21pAdCvWeAqpcKDFMdWw==
   
 # Add a logging server to both our sites to sastify compliance
-# logging:
-#   buffered:
-#     size: 8000
-#     level: notifications
-#   trap: debugging
+logging:
+   buffered:
+     size: 8000
+     level: notifications
+   trap: debugging
 #   vrfs:
 #     - name: "default"
 #       source_interface: "Management0"
